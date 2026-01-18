@@ -11,9 +11,7 @@ const BuyActionWindow = ({ uid, mode = "BUY" }) => {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post(
-        "https://tradesphere-backend.onrender.com
-/newOrder",
+      const response = await axios.post("https://tradesphere-backend.onrender.com/newOrder",
         {
           name: uid,
           qty: Number(stockQuantity),
@@ -22,10 +20,8 @@ const BuyActionWindow = ({ uid, mode = "BUY" }) => {
         }
         );
         fetchOrders();
-      console.log(`${mode} ORDER SAVED:`, response.data);
       closeBuyWindow();
     } catch (err) {
-      console.error(`${mode} FAILED:`, err);
     }
   };
 
