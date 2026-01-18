@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3002/verify", {
+      .get("https://tradesphere-backend.onrender.com/verify", {
         withCredentials: true,
       })
       .then((res) => {

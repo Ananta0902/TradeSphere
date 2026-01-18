@@ -13,7 +13,7 @@ export const GeneralContextProvider = ({ children }) => {
   // fetch orders from backend
   const fetchOrders = async () => {
     try {
-      const res = await axios.get("http://localhost:3002/orders");
+      const res = await axios.get("https://tradesphere-backend.onrender.com/orders");
       console.log("Fetched Orders:", res.data);  
       setOrders(res.data);
     } catch (err) {

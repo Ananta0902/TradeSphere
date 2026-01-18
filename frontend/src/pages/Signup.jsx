@@ -25,7 +25,7 @@ const Signup = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:3002/signup",
+        "https://tradesphere-backend.onrender.com/signup",
         form
       );
 

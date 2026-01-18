@@ -23,7 +23,7 @@ const Login = () => {
 
   try {
     const res = await axios.post(
-      "http://localhost:3002/login",
+      "https://tradesphere-backend.onrender.com/login",
       form,
       { withCredentials: true }
     );
