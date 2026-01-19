@@ -31,7 +31,7 @@ const Login = () => {
     if (res.data.success) {
 
       toast.success("Welcome to Zerodha!");
-      window.location.href ="https://tradesphere-dashboard.onrender.com";
+      window.location.href ="https://tradesphere-dashboard-ah70.onrender.com";
 
     } else {
       toast.error(res.data.message || "Invalid credentials");
