@@ -12,7 +12,7 @@ const {HoldingsModel}=require('./models/HoldingsModels');
 const {PositionsModel} = require('./models/PositionsModels');
 const {OrdersModel}=require('./models/OrdersModels');
 const cookieParser = require("cookie-parser");
-const { Signup, Login } = require("./Controllers/AuthController");
+const { Signup, Login ,Logout} = require("./Controllers/AuthController");
 
 const app=express();
 app.use(express.json());
@@ -221,6 +221,7 @@ app.get("/orders", async (req, res) => {
 
 app.post("/signup", Signup);
 app.post("/login", Login);
+app.post("/logout", Logout);
 
 mongoose.connect(uri)
   .then(() => {

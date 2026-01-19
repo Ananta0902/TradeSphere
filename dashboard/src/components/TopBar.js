@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Menu from './Menu';
+import Logout from "./Logout";
+
 function TopBar() {
     return ( 
         <div className="topbar-container">
@@ -16,6 +18,9 @@ function TopBar() {
         </div>
          </div>
       <Menu />
+   
+  <h2>TradeSphere</h2>
+  <Logout />
         </div>
      );
 }
