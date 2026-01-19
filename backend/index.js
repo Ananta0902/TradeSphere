@@ -18,7 +18,14 @@ const app=express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({ origin: "*" }));
+app.use(cors({
+  origin: [
+    "https://tradesphere-frontend-prrn.onrender.com",
+    "https://tradesphere-dashboard-ah70.onrender.com/"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 
 // app.get('/addHoldings',async(req,res)=>{
 // let tempHoldings=[
