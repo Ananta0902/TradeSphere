@@ -189,6 +189,7 @@ app.use(cors({
 
 app.get('/allHoldings',async(req,res)=>{ 
 let allHoldings=await HoldingsModel.find({});
+ console.log("Holdings from DB:", allHoldings); // check output
 res.json(allHoldings);
 });
 //2 API to connect to dashboard
