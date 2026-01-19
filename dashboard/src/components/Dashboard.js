@@ -24,10 +24,7 @@ function Dashboard() {
                         <Route path='positions' element={<Positions />} />
                         <Route path='funds' element={<Funds />} />
                         <Route path='apps' element={<Apps />} />
-                         {/* <Route path="/" element={<Home />} /> */}
-                        {/* <Route path="/login" element={<Login />} />
-                        <Route path="/signup" element={<Signup />} /> */}
-                    </Routes>
+                                       </Routes>
                 </div>
             </div>
         </GeneralContextProvider>
