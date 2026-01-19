@@ -5,7 +5,7 @@ import axios from 'axios';
 const Positions=()=> {
     const [allPositions,setAllPositions]=useState([]);
     useEffect(()=>{
-  axios.get("https://tradesphere-backend.onrender.com/allPositions").then((res)=>{
+  axios.get(`${process.env.REACT_APP_BACKEND_URL}/allPositions`).then((res)=>{
     setAllPositions(res.data);
   });
     },[]);
